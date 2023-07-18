@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Work+Sans:ital,wght@0,600;0,700;0,800;1,500&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    margin: 5px;
+}
+
+.header-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 0px 80px 0px 80px;
+}
+
+.header-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title {
+    padding-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 15px;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(241, 239, 236)
+}
+
+.banner-title {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.doted-text {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 10px;
+    background: linear-gradient(180deg, #F948B2 10%, #8758F1 90%);
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-disc {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin: 5px 0px 5px 0px;
+}
+
+.btn-primary-1 {
+    color: #FFF;
+    border-radius: 1.0rem;
+    background: #e20fd0a1;
+    width: 110px;
+    height: 35px;
+    border: 0;
+}
+
+.btn-primary-2 {
+    color: #FFF;
+    border-radius: 1.0rem;
+    background: #0ea0dfb0;
+    width: 110px;
+    height: 35px;
+    border: 0;
+    margin-top: 50px;
+}
+
+.banner-section-2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(221, 223, 226);
+    align-items: center;
+}
+
+.gamer-title {
+    align-items: end;
+    width: 580px;
+}
+
+.gamer-header {
+    text-align: right;
+    font-size: 45px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gamer-disc {
+    color: #534C64;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+}
+.btn-primary-3 {
+    color: #FFF;
+    border-radius: 1.0rem;
+    background: #e20fd0a1;
+    width:200px;
+    height:80px;
+    border: 0;
+}
