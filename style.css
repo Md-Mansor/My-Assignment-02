@@ -11,24 +11,28 @@ header {
 }
 
 body {
-    margin: 5px;
+    margin: 1px;
 }
 
 .header-head {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: auto;
-    padding: 0px 80px 0px 80px;
 }
 
 .header-left {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
+.g{
+    color: #ff01d993;
+}
 .header-title {
     padding-left: 20px;
+    font-size: 40px;
+    
 }
 
 header nav ul {
@@ -99,10 +103,10 @@ header nav ul li {
     justify-content: space-around;
     background-color: rgb(221, 223, 226);
     align-items: center;
+    margin-top: -5px;
 }
 
 .gamer-title {
-    align-items: end;
     width: 580px;
 }
 
@@ -122,11 +126,149 @@ header nav ul li {
     font-size: 15px;
     font-weight: 400;
 }
+
 .btn-primary-3 {
     color: #FFF;
     border-radius: 1.0rem;
     background: #e20fd0a1;
-    width:200px;
-    height:80px;
+    width: 200px;
+    height: 80px;
     border: 0;
+}
+
+.gamer-footer {
+    text-align: right;
+    font-size: 30px;
+    color: #534C64;
+}
+
+.sec-online-game {
+    text-align: center;
+    /* height: 200px; */
+}
+
+.online-title {
+    padding-top: 30px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.game-title-style {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-game-disc {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card-pic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+}
+
+.card-pic-dis {
+    color: #534C64;
+    font-size: 15px;
+    width: 325px;
+    height: 20px;
+    text-align: center;
+
+}
+
+.instant-player {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:60px;
+}
+.instant-design {
+    font-size: 45px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instant-title {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.instant-disc {
+    color: #534C64;
+    font-size: 15px;
+    width: 325px;
+    height: 20px;
+    text-align: right;
+}
+.instant-main-pic{
+    height: 480px;
+    width: auto;
+}
+.instant-corner-pic{
+    margin-top:-30%;
+    margin-left:-10%;
+    width: 200px;
+    height: auto;
+}
+footer{
+    background-color: #02034d;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 500px
+} 
+.last-part{
+    /* align-items: center; */
+    padding: 50px;
+}
+.footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h3{
+    color: #FFF;
+    font-size: 50px;
+    margin: 0px;
+}
+footer h3 span{
+    color: #F948B2;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content:center;
+    align-self: center;
+}
+.More-About-Us{
+    color: #FFF;
+}
+footer ul li{
+    margin: 20px;
+    font-size: 20px;
+    width: 120px;
+    height: auto;
+    margin-top: 50px;
+}
+.social-media-icons{
+
+}
+footer section div a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+footer section div{
+    text-align: center;
+    color: #FFF;
 }
