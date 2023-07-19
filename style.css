@@ -57,6 +57,10 @@ header nav ul li {
     border-radius: 15px;
 }
 
+.follow-icon {
+    cursor: pointer;
+}
+
 .banner {
     display: flex;
     justify-content: space-around;
@@ -148,7 +152,7 @@ header nav ul li {
 }
 
 .gamer-footer {
-    text-align: right;
+    /* text-align: right; */
     font-size: 30px;
     color: #534C64;
 }
@@ -226,36 +230,33 @@ header nav ul li {
 .instant-main-pic {
     height: 480px;
     width: auto;
+    border-radius: 10px;
 }
 
 .instant-corner-pic {
-    margin-top: -30%;
-    margin-left: -10%;
+    margin-top: -35%;
+    margin-left: -15%;
     width: 200px;
     height: auto;
+    border-radius: 10px;
 }
 
 .all-btn-main:hover {
-    border: 5px solid palevioletred;
-    cursor:pointer;
+    color: #F948B2;
+    border: 2px solid palevioletred;
+    cursor: pointer;
 }
+
 
 .all-btn-main {
     margin: 20px;
 }
 
 .bottom-main-a {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-}
-
-.bottom-main-b {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 15px 140px;
 }
 
 .bottom-main-a button {
@@ -263,16 +264,7 @@ header nav ul li {
     align-items: center;
     border-radius: 50px;
     border: none;
-    width: 250px;
-}
-
-.bottom-main-b button {
-    background-color: #fafafabe;
-    align-items: center;
-    border-radius: 50px;
-    border: none;
-    width: 250px;
-    /* height: 50px; */
+    width: 220px;
 }
 
 .all-btn-main {
@@ -284,11 +276,10 @@ footer {
     background-color: #02034d;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    height: 500px
+    height: auto;
 }
 
 .last-part {
-    /* align-items: center; */
     padding: 50px;
 }
 
@@ -327,8 +318,6 @@ footer ul li {
     margin-top: 50px;
 }
 
-.social-media-icons {}
-
 footer section div a {
     display: flex;
     justify-content: space-around;
@@ -339,4 +328,133 @@ footer section div a {
 footer section div {
     text-align: center;
     color: #FFF;
+}
+
+
+/* responsive web for mobile */
+@media screen and (max-width:576px) {
+    .header-head {
+        flex-direction: column;
+    }
+
+    .header-left {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-element {
+        width: 425px;
+    }
+
+    .banner-section-2 {
+        flex-direction: column;
+    }
+
+    .banner-section-pic2 {
+        width: 400px;
+    }
+
+    .gamer-title,
+    .gamer-footer {
+        text-align: center;
+        width: auto;
+    }
+
+    .card-pic {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .instant-player {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .instant-main-pic {
+        width: 400px;
+        height: auto;
+    }
+
+    .instant-corner-pic {
+        max-width: none !important;
+        margin-left: 0px;
+    }
+
+    .bottom-main-a {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* width: 200px; */
+    }
+
+    .all-btn-main {
+        margin: 1px;
+        /* width: 200px; */
+    }
+
+    .More-About-Us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px;
+    }
+
+    footer section div a {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .last-part,
+    footer {
+        height: auto;
+    }
+
+    .terms {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        align-items: center;
+    }
+}
+
+
+/* responsive for tab */
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    .banner,
+    .banner-section-2 {
+        flex-direction: column;
+    }
+
+    .gamer-title {
+        text-align: center;
+    }
+
+    .card-pic {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .instant-player{
+        flex-direction: column;
+    }
+    .bottom-main-a{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .More-About-Us{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        padding: 0px;
+    }
+    footer section div a  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
