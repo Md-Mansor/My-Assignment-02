@@ -26,13 +26,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.g{
+
+.g {
     color: #ff01d993;
 }
+
 .header-title {
     padding-left: 20px;
     font-size: 40px;
-    
+
 }
 
 header nav ul {
@@ -46,6 +48,14 @@ header nav ul li {
     padding: 15px;
 }
 
+.follow-btn {
+    display: flex;
+    background-color: #bdb3d3;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 250px;
+    border-radius: 15px;
+}
 
 .banner {
     display: flex;
@@ -187,8 +197,9 @@ header nav ul li {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding:60px;
+    padding: 60px;
 }
+
 .instant-design {
     font-size: 45px;
     font-weight: 500;
@@ -211,40 +222,51 @@ header nav ul li {
     height: 20px;
     text-align: right;
 }
-.instant-main-pic{
+
+.instant-main-pic {
     height: 480px;
     width: auto;
 }
-.instant-corner-pic{
-    margin-top:-30%;
-    margin-left:-10%;
+
+.instant-corner-pic {
+    margin-top: -30%;
+    margin-left: -10%;
     width: 200px;
     height: auto;
 }
-.all-btn-main{
+
+.all-btn-main:hover {
+    border: 5px solid palevioletred;
+    cursor:pointer;
+}
+
+.all-btn-main {
     margin: 20px;
 }
-.bottom-main-a{
+
+.bottom-main-a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 20px;
 }
 
-.bottom-main-b{
+.bottom-main-b {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 15px 140px;
 }
-.bottom-main-a button{
+
+.bottom-main-a button {
     background-color: #fafafabe;
     align-items: center;
     border-radius: 50px;
     border: none;
     width: 250px;
 }
-.bottom-main-b button{
+
+.bottom-main-b button {
     background-color: #fafafabe;
     align-items: center;
     border-radius: 50px;
@@ -252,59 +274,69 @@ header nav ul li {
     width: 250px;
     /* height: 50px; */
 }
-.all-btn-main{
+
+.all-btn-main {
     display: flex;
     justify-content: space-evenly;
 }
-footer{
+
+footer {
     background-color: #02034d;
     margin-bottom: 0px;
     padding-bottom: 0px;
     height: 500px
-} 
-.last-part{
+}
+
+.last-part {
     /* align-items: center; */
     padding: 50px;
 }
-.footer-item{
+
+.footer-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-footer h3{
+
+footer h3 {
     color: #FFF;
     font-size: 50px;
     margin: 0px;
 }
-footer h3 span{
+
+footer h3 span {
     color: #F948B2;
 }
-footer ul{
+
+footer ul {
     display: flex;
     list-style: none;
-    justify-content:center;
+    justify-content: center;
     align-self: center;
 }
-.More-About-Us{
+
+.More-About-Us {
     color: #FFF;
 }
-footer ul li{
+
+footer ul li {
     margin: 20px;
     font-size: 20px;
     width: 120px;
     height: auto;
     margin-top: 50px;
 }
-.social-media-icons{
 
-}
-footer section div a{
+.social-media-icons {}
+
+footer section div a {
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #FFF;
 }
-footer section div{
+
+footer section div {
     text-align: center;
     color: #FFF;
 }
