@@ -7,7 +7,7 @@
 
 header {
     background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(26, 25, 25, 0.445);
+    /* box-shadow: 0px 4px 30px 0px rgba(26, 25, 25, 0.445); */
 }
 body {
     margin: 1px;
@@ -22,12 +22,12 @@ body {
 
 .header-left {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.g {
-    color: #ff01d993;
+#g {
+    color: #ff01d9b4;
 }
 
 .header-title {
@@ -37,14 +37,15 @@ body {
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
+    list-style: none;
 }
 
 header nav ul li {
     padding: 15px;
+    font-size: 20px;
 }
 
 .follow-btn {
@@ -58,6 +59,7 @@ header nav ul li {
 
 .follow-icon {
     cursor: pointer;
+    padding-top: 15px;
 }
 
 .banner {
@@ -66,16 +68,22 @@ header nav ul li {
     align-items: center;
     background-color: rgb(241, 239, 236)
 }
+.banner-back{
+    background-image: url(/images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* height: 100%; */
+}
 
 .banner-title {
     color: black;
-    font-size: 50px;
+    font-size: 4rem;
     font-weight: 600;
     margin: 10px;
 }
 
 .doted-text {
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 700;
     margin: 10px;
     background: linear-gradient(180deg, #F948B2 10%, #8758F1 90%);
@@ -123,7 +131,7 @@ header nav ul li {
 }
 
 .gamer-title {
-    width: 580px;
+    width:40%;
     text-align: right;
 }
 
@@ -140,17 +148,17 @@ header nav ul li {
 .gamer-disc {
     color: #534C64;
     /* text-align: right; */
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 1.2rem;
+    /* font-weight: 400; */
 }
 
 .btn-primary-3 {
     font-size: 20px;
     color: #FFF;
-    border-radius: 1.0rem;
+    border-radius: 1.2rem;
     background: #e20fd0a1;
-    width: 200px;
-    height: 80px;
+    width: 12rem;
+    height: 5rem;
     border: 0;
 }
 
@@ -166,9 +174,9 @@ header nav ul li {
 }
 
 .online-title {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     font-size: 50px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .game-title-style {
@@ -192,10 +200,10 @@ header nav ul li {
 }
 .card-pic-dis {
     color: #534C64;
-    font-size: 15px;
+    /* font-size: 15px; */
     width: 325px;
     height: 20px;
-    text-align: center;
+    /* text-align: center; */
 
 }
 
@@ -216,7 +224,7 @@ header nav ul li {
 }
 
 .instant-title {
-    text-align: right;
+    /* text-align: right; */
     font-size: 48px;
     font-weight: 400;
 }
@@ -225,7 +233,7 @@ header nav ul li {
     color: #534C64;
     font-size: 15px;
     width: 325px;
-    height: 20px;
+    /* height: 20px; */
     text-align: right;
 }
 
@@ -253,11 +261,14 @@ header nav ul li {
 .all-btn-main {
     margin: 20px;
 }
+.bottom-part{
+    margin: 5px 100px;
+}
 
 .bottom-main-a {
-    display: grid;
-    grid-template-columns: repeat(4, 0fr);
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
     align-items: center;
 }
 
@@ -349,6 +360,11 @@ footer section div {
 
     .banner {
         flex-direction: column;
+        padding: 5px;
+        align-items: normal;
+    }
+    .banner-back{
+        height: 100%;
     }
 
     .banner-element {
